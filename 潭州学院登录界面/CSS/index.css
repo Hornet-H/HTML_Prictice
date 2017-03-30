@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*不平铺*/
+    background: url("../images/bg.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#panel{
+    background-color: white;
+    /*改变标签类型*/
+    display: inline-block;
+    /*重写*/
+    text-align: left;
+    /*上边距*/
+    margin-top: 150px;
+    /*填充--内边距*/
+    padding: 30px;
+    /*设置圆角*/
+    border-radius: 5px;
+    /*设置阴影*/
+    box-shadow: -20px 20px 50px;
+}
+.header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.header h2{
+
+    font-size: 20px;
+    /*设置线条*/
+    border-bottom: 1px solid #dddddd;
+    /*让线条往下走*/
+    padding-bottom: 10px;
+    /*改变样式*/
+    display: inline-block;
+}
+.content{
+
+
+}
+.content .user_name{
+    margin-bottom: 15px;
+    height: 38px;
+    position: relative;
+}
+.content .user_name img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.content .user_name input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 38px;
+    border-radius: 8px;
+    /*重写*/
+    border: 1px solid #dddddd;
+
+
+}
+.content .pass_word{
+    height: 38px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.content .pass_word img{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.content .pass_word input{
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+    padding-left: 38px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+.content .setting a{
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.content .setting .forget_pwd{
+    margin-right: 10px;
+    float: right;
+
+}
+.login_btn{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.login_btn button{
+    outline: none;
+    width:100%;
+    height: 100%;
+    /*控制的是填充颜色*/
+    background-color: orangered;
+    /*控制的是字体颜色*/
+    /*color: #3385ff;*/
+
+}
+.login_btn button:focus{
+
+    /*border: 1px solid green;*/
+    background-color: greenyellow;
+
+}
+/*#reg{*/
+    /*text-align: center;*/
+    /*margin: 10px 0;*/
+    /*font-size: 13px;*/
+/*}*/
+/*#reg a{*/
+    /*color:red;*/
+
+/*}*/
+
+#footer{
+    background-color: red;
+    height: 38px;
+    line-height: 38px;
+}
+
+#footer img{
+    width: 30px;
+    height: 30px;
+    /*图片垂直居中*/
+    vertical-align: middle;
+}

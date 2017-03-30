@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: black;
+}
+
+body{
+    background: url("../images/bg.jpg");
+    /*设置背景图片缩放*/
+    background-size: cover;
+}
+
+/* 头部 */
+#header{
+    background-color:rgba(0,0,0,0.2);
+    /*右对齐*/
+    text-align: right;
+    /*上下间距*/
+    /*margin:15px 0;*/
+    height: 42px;
+    line-height: 42px;
+
+
+}
+#header a{
+
+    /*加粗*/
+    font-weight: bolder;
+    color: white;
+    /*字体*/
+    /*font-family:'sans-serif';*/
+    /*设置文字大小*/
+    font-size: 14px;
+    /*右间距*/
+    margin-right: 8px;
+}
+
+#header a.no-weight{
+    font-weight: normal;
+}
+#header a.more-product{
+    background-color: #3385ff;
+    color: white;
+    /*去除下划线*/
+    text-decoration: none;
+    /*设置内边距*/
+    padding: 6px;
+
+}
+
+#header img{
+    height: 100px;
+    width: 90px;
+}
+
+ 中间内容
+#content{
+    /*background-color: gainsboro;*/
+    /*text-align: center;*/
+}
+#content .top-content{
+    /*居中*/
+    text-align: center;
+    margin-bottom: 10px;
+    /*background-color: green;*/
+}
+#content .top-content img{
+    width: 270px;
+    height: 129px;
+}
+#content .mi-content{
+    background-color: blue;
+    text-align: left;
+    width: 600px;
+    height: 35px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#content .mi-content input {
+    width: 500px;
+    height: 100%;
+
+    padding-left: 5px;
+    box-sizing: border-box;
+    /*background-color: green;*/
+    font-size: 16px;
+}
+#content .mi-content input:focus {
+    outline: none;
+    border: 1px solid green;
+}
+#content .mi-content a{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    float: right;
+    text-align: center;
+    /*margin-right: 0;*/
+    background-color: blue;
+}
+/*#content .bottom-content {*/
+    /*background-color: red;*/
+    /*width: 600px;*/
+    /*height: 35px;*/
+    /*!*间距*!*/
+    /*margin: 0 auto 30px;*/
+/*}*/
+/*#content .bottom-content input{*/
+    /*width: 500px;*/
+    /*height: 100%;*/
+    /*!*设置内边距向里缩*!*/
+    /*box-sizing: border-box;*/
+    /*!*左内边距*!*/
+    /*padding-left: 10px;*/
+    /*!*字体*!*/
+    /*font-size: 16px;*/
+
+/*}*/
+
+#content .bottom-content a{
+    background-color: #3385ff;
+    color: white;
+    text-decoration: none;
+
+    height: 35px;
+    width: 100px;
+    /*改为行内块级标签*/
+    /*display: inline-block;*/
+    /*浮动*/
+    float: right;
+    /*内容居中*/
+    text-align: center;
+    /*水平居中需要设置行高*/
+    line-height: 35px;
+}
+
+#content .bottom-content input:focus{
+    /*去除外边线*/
+    outline: none;
+    border: 1px solid #3385ff;
+}
+
+#content .quick-search{
+    text-align: center;
+}
+#content .quick-search img{
+    width: 100px;
+    height: 90px;
+    margin: 5px;
+}
+
+
+#content .quick-search img:hover{
+    /*设置半透明*/
+    opacity: 0.5;
+}
+
+
+
+/* 尾部 */
+#footer{
+    /*background-color: greenyellow;*/
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+.top-footer{
+    margin-bottom: 5px;
+}
+.bottom-footer{
+    margin-bottom: 30px;
+}
+#footer a{
+    margin: 0 5px;
+}

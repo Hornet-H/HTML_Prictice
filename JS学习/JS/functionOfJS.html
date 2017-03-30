@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS中的函数调用方式</title>
+    <script type="text/javascript">
+       //1.1加法运算
+        function sum(num1,num2) {
+         return num1 + num2;
+        }
+
+        var result= sum(10 ,20);
+//        console.log(result);
+        //万能的加法函数---传入的参数并没有规定数据类型
+        function  sum2(numbers){
+            var result = 0;
+            for(var i in numbers){
+                result += numbers[i];
+            }
+            return result;
+        }
+        var  resule1 = sum2([10,10,10,10,60]);
+//        console.log(resule1);
+
+        //JS中的匿名函数，相当于OC中的Block
+
+       //定义一个匿名函数
+       var res = function () {
+           console.log('匿名函数');
+       }
+       //将匿名函数当做参数传入函数中
+       function myFunc(block) {
+           block()
+       }
+       //可以在这个地方进行触发匿名函数
+       myFunc(res);
+
+        function funm1(str1) {
+            return function (str2) {
+                return str1 + str2;
+            }
+        }
+        var temp = funm1('大黄蜂Love')
+        var temp2 = temp('玲玲')
+        console.log(temp2);
+
+        //代码块的作用域
+        var t = 'dahuangfeng';
+        if (true){
+            //下JS中t仍然是一个全局变量，这一点和OC是不同的
+            var t = 'Dream';
+
+        }
+        console.log(t);
+
+        //函数的作用域
+        function test() {
+            //在函数中的变量属于局部变量，外面无法获取
+            var t = 'Jack';
+        }
+        test();
+        console.log(t);//打印的结果仍然是Dream
+
+       //在JS中创建一个对象有下面两种写法
+        var obj = new Object();//初始化一个Object对象
+        obj.age = 5;
+        obj.click = function () {
+            alert("我被点击了")
+        }
+        //另外一种写法
+        var obj1 = {
+            age:5,
+            click:function () {
+                alert("我也被点击了")
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

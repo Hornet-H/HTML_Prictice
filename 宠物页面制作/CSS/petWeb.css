@@ -64,6 +64,15 @@ a{
     display: inline-block;
     margin: 8px 8px;
 }
+#tabView .dogItem img{
+    margin: 2px;
+}
+#tabView .dogItem p{
+    padding: 2px;
+}
+#tabView .dogItem a{
+    margin: 4px;
+}
 #tabView .dogItem a{
     background-color: orangered;
     display: inline-block;
@@ -73,4 +82,55 @@ a{
     border-radius: 5px;
     font-size: 24px;
     text-align: center;
+}
+#footer{
+    text-align: center;
+}
+#footer h2{
+    color: white;
+    margin: 5px 0px;
+}
+#footer ul{
+    margin-bottom: 10px;
+}
+#footer ul li{
+    display: inline-block;
+}
+#footer ul li img:hover{
+    opacity: 0.7;
+}
+
+/*自适应布局*/
+@media screen and (max-width: 1095px){
+    #nav ul li a{
+        width: 150px;
+    }
+}
+@media screen  and (max-width:860px) {
+    #nav ul li a{
+        width: 100px;
+        font-size: 25px;
+    }
+    #tabView {
+        margin-top: 50px;
+    }
+    #tabView .dogItem{
+        width: 300px;
+    }
+    #tabView .dogItem img{
+        width: 300px;
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width: 660px){
+    #nav ul li a {
+        width: 60px;
+        font-size: 15px;
+    }
+    #tabView{
+        margin-top: 20px;
+    }
+    #tabView .dogItem{
+        width: 360px;
+    }
 }

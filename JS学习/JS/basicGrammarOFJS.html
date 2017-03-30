@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <!--js的代码一般在script中进行-->
+    <script type="text/javascript">
+        <!--在JS中实现弹窗-->
+        //alert("HelloWorld");
+        //alert("您好:我的爱人")
+        //调试输出---这个实在控制台打印的函数
+//        console.log('你好调试');
+
+
+        //JS中基本的数据类型---var会根据具体的东西来对号入座所定义的类型--和swift类似
+        var age = 20;
+        var money = 100.00;
+        var name = 'jack';
+            name2 = 'rode';
+        var result = true;//false
+        var scor = null;
+//        console.log(typeof  age,typeof money,typeof name,typeof name2,typeof result,typeof scor);
+        //3、练习
+        var  str1 = 10 + 10 +'10';//猜测：2010
+        var  str2 = '10' + 10 + 10;//猜测：101010
+        var  str3 = (10 + '10') + 10;//猜测：101010
+        var  str4 = ('10') + (10 + 10);//猜测：1020
+        //打印测试结果
+//        console.log(str1,str2,str3,str4);//猜测：
+//       和猜测的结果是一致的 总结：按照优先级进行运算，任何数字和字符串相加，数字都汇被强转成字符类型
+        //4 数组
+        var arr = [];
+        //往数组里面添加东西
+        arr.push(11,22,22,33,'huangfeng',name,result,['中华崛起','操你妈的小日本']);
+//        console.log(arr);
+        //遍历数组
+        for(var i = 0;i < arr.length;i ++){
+
+//            console.log(arr[i]);
+        }
+//for in循环
+        for (var i in arr){
+//            console.log(arr[i]);//i仅仅代表角标
+
+        }
+        arr.pop();// 无法传参数
+        for(var i = 0;i < arr.length;i ++){
+
+            console.log(arr[i]);
+        }
+        var nums = [10,6,-99,1000];
+        console.log(Math.max.apply(this,nums));
+//        js中任何变量都是一个对象
+        var x = new String;
+    </script>
+
+
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>

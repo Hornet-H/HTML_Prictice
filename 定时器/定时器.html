@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id = "ptime" >我是大黄蜂</p>
+    <script>
+        var mytime = setInterval(function () {
+            doSomeThing();
+        },1000);
+        function doSomeThing() {
+            var d = new Date();
+            var t = d.toLocaleDateString();
+            document.getElementById("ptime").innerHTML(t);
+
+        }
+
+
+    </script>
+</body>
+</html>

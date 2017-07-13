@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="inputID" type="text">
+    <button onclick="ceshi()">提交</button>
+    <script>
+        function ceshi() {
+            var text = document.getElementById("inputID").value;
+            if (text=="dahuangfeng"){
+
+                history.go(-1);
+
+            }else {
+
+                alert("输入密码错误")
+
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

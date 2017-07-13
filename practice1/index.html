@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大黄蜂</title>
+</head>
+<body>
+    <p class="pn">hello</p>
+    <p name="pn">hello</p>
+    <p class="pn">hello</p>
+    <p name="pn">hello</p>
+    <p class="pn">hello</p>
+    <h id="classID1" title="属性">hello</h>
+    <h id="classID2" title="属性">hello</h>
+    <p id="ptime" ></p>
+    <button onClick="settime()">清除定时器</button>
+    <!--<ul>-->
+        <!--<li>哈哈哈</li>-->
+        <!--<li>哈哈哈</li>-->
+        <!--<li>呵呵好</li>-->
+        <!--<li>呵呵哒</li>-->
+    <!--</ul>-->
+    <!--<div id="div">-->
+        <!--<p id="pid">我美丽的爱人</p>-->
+    <!--</div>-->
+<script>
+    function getName() {
+        var count = document.getElementsByTagName("p");
+        alert(count.length);
+        var  p = count[2];
+        p.innerHTML = "world";
+    }
+//    getName();
+function getAttr() {
+    var name = document.getElementById("classID1");
+    var  attr = name.getAttribute("title");
+    alert(attr);
+}
+//getAttr();
+    function  setAttr() {
+        var anode = document.getElementById("classID2");
+        anode.setAttribute("title","大黄蜂修改了属性")
+        var  attr = anode.getAttribute("title");
+        alert(attr);
+    }
+
+//setAttr();
+
+    function getChildNodes() {
+        var nodes = document.getElementsByTagName("ul")[0].childNodes;
+        alert(nodes.length);
+        alert(nodes[0].nodeType);
+    }
+//getChildNodes();
+
+    function getParentNodes() {
+        var nodes = document.getElementById("pid");
+        alert(nodes.parentNode.nodeName);
+        alert(nodes.parentNode.nodeValue);
+    }
+//    getParentNodes();
+    //动态添加元素
+    function creatnode() {
+        var body=document.body;
+        var input=document.createElement("input");
+        input.type="button";
+        input.value="通过js添加按钮";
+        body.appendChild(input);
+
+    }
+//    creatnode();
+    function addNodes() {
+        var div = document.getElementById("div");
+        var p = document.getElementById("pid");
+        var addNode = document.createElement("p");
+        div.insertBefore(addNode,p);
+        addNode.innerHTML = "超级大黄蜂的测试";
+    }
+//addNodes();
+
+
+//    动态删除元素
+    function deleteElement() {
+        var div = document.getElementById("div");
+        var p = div.removeChild(div.childNodes[1]);
+    }
+//deleteElement();
+
+    //获取浏览器的高度和宽度
+   function getSize(){
+        var width = document.body.offsetWidth || document.documentElement.offsetWidth;
+        var height = document.body.offsetHeight || document.documentElement.offsetHeight;
+       alert(width+","+height);
+   }
+//getSize();
+
+    var mytime = setInterval(function () {
+        getTime();
+    },1000);
+    function getTime() {
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        var  p = document.getElementById("ptime")
+        p.innerHTML = t;
+    }
+    function settime() {
+        setTimeout(function () {
+
+            alert("dahuangfeng");
+
+        },3000)
+
+    }
+function clearInterVal() {
+        clearInterval(mytime);
+}
+
+</script>
+
+</body>
+</html>

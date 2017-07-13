@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="getLoc()">获取location</button>
+    <button onclick="getScreenProerty()">获取屏幕的相关属性</button>
+    <p id="pId">玩哈哈哈哈</p>
+    <script>
+        function getLoc() {
+//            http://localhost:63342/month/index.html?_ijt=uden4vms80etidba0kdfi83l04
+            var p = document.getElementById("pId")
+//            p.innerHTML = location.hostname;//localhost
+//            p.innerHTML = location.host;//localhost:63342
+//            p.innerHTML = location.port;//63342
+//            p.innerHTML = location.pathname;//month/index.html
+//            p.innerHTML = location.protocol;//http
+//            p.innerHTML = location.href;//http://localhost:63342/month/index.html?_ijt=uden4vms80etidba0kdfi83l04
+//            p.innerHTML = location.search;//?_ijt=uden4vms80etidba0kdfi83l04
+            alert(p.innerHTML);
+            p.innerHTML = location.assign("http://www.baidu.com");
+
+
+        }
+       function getScreenProerty() {
+           alert("屏幕的可用宽度:"+screen.availWidth+"屏幕的可用高度:"+screen.availHeight+"屏幕的宽度:"+screen.width+"屏幕的高度："+screen.height);
+       }
+
+    </script>
+</body>
+</html>

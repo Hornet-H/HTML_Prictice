@@ -13,6 +13,27 @@ function imagLocation(parentID,contentName) {
     var  cols = Math.floor(document.documentElement.clientWidth / imgWith);
     parent.style.cssText = "width:"+imgWith*cols+"px;margin:0 auto";//margin:0 auto这句话是为了让内容居中
     console.log(content);
+
+    //定义一个高度数组用来存放高度
+    var BoxHeightArr = [];
+    for (var i = 0;i <content.length;i ++){
+        if (i < cols){
+            BoxHeightArr[i] = content[i].offsetHeight;
+            console.log(BoxHeightArr[i]);
+        }else {
+            var  minHeight = Math.min.apply(null,BoxHeightArr);
+            //拿到最小值对应的下标
+            var minIndex = getMinHeightLocation(BoxHeightArr,minHeight);
+            content[i].style.position = "absolute";
+            content[i].style.top = minHeight + "px";
+            content[i].style.left = content[minIndex].offsetLeft + "px";
+            BoxHeightArr[minIndex] = BoxHeightArr[minIndex] + content[i].offsetHeight;
+            console.log( "minHeight"+minHeight);
+        }
+
+
+    }
+
 }
 function getElement(parent,contentName) {
     var contentArr = [];//定义一个数组
@@ -25,4 +46,14 @@ function getElement(parent,contentName) {
         }
     }
     return contentArr;
+}
+
+function getMinHeightLocation(arr,minHeight) {
+    for (var i = 0;i < arr.length;i ++){
+        if (arr[i] == minHeight){
+
+            return i;
+
+        }
+    }
 }

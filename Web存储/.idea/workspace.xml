@@ -52,8 +52,8 @@
       <file leaf-file-name="sessionStorage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sessionStorage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="63">
+              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
               </folding>
@@ -92,8 +92,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="245" />
-    <option name="y" value="527" />
+    <option name="x" value="231" />
+    <option name="y" value="246" />
     <option name="width" value="1251" />
     <option name="height" value="593" />
   </component>
@@ -223,15 +223,15 @@
       <updated>1500535245810</updated>
       <workItem from="1500535246922" duration="1721000" />
       <workItem from="1501035567807" duration="955000" />
-      <workItem from="1501229595053" duration="1019000" />
+      <workItem from="1501229595053" duration="1525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3695000" />
+    <option name="totallyTimeSpent" value="4201000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="245" y="527" width="1251" height="593" extended-state="0" />
+    <frame x="231" y="246" width="1251" height="593" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -381,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sessionStorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="63">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
           </folding>
